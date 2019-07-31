@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FundamentosXAML.Views.GridPage">
+
+
+
+        <StackLayout  BackgroundColor="#127ac7">
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Bienvenidos!"
+                   TextColor="White"
+                   FontSize = "30"
+                   FontAttributes = "Bold"
+                    VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   />
+            <Label Text="Cross-platform apps made easy"
+                   FontSize = "18"
+                   FontAttributes = "Bold"
+                   HorizontalOptions = "Center"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   />
+            <Button BackgroundColor="#1dabf0"
+                    Text="Login"
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="White"
+                    ></Button>
+            <Button BackgroundColor="#1dabf0"
+                    Text="Register"
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="White"
+                    ></Button>
+        </StackLayout>
+    </StackLayout>
+
+
+
+
+
+</ContentPage>

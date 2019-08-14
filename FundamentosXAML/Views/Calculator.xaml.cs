@@ -17,7 +17,7 @@ namespace FundamentosXAML.Views
         private String numberA;
         private String numberB;
         private String operation;
-        private List<String> Listoperation = new List<string>();
+        private List<String> list = new List<string>();
 
         public Calculator()
         {
@@ -116,8 +116,8 @@ namespace FundamentosXAML.Views
             numberA = labelResult.Text;
             operation = "percent";
             labelOperations.Text += String.Format("{0:00}", numberA) + "%";
-            Listoperation.Add(numberA);
-            Listoperation.Add(operation);
+            list.Add(numberA);
+            list.Add(operation);
             labelResult.Text = "0";
 
         }
@@ -127,8 +127,8 @@ namespace FundamentosXAML.Views
             numberA = labelResult.Text;
             operation = "div";
             labelOperations.Text += String.Format("{0:00}", numberA) + "/";
-            Listoperation.Add(numberA);
-            Listoperation.Add(operation);
+            list.Add(numberA);
+            list.Add(operation);
             labelResult.Text = "0";
         }
 
@@ -137,8 +137,8 @@ namespace FundamentosXAML.Views
             numberA = labelResult.Text;
             operation = "mult";
             labelOperations.Text += String.Format("{0:00}", numberA) + "*";
-            Listoperation.Add(numberA);
-            Listoperation.Add(operation);
+            list.Add(numberA);
+            list.Add(operation);
             labelResult.Text = "0";
         }
 
@@ -147,8 +147,8 @@ namespace FundamentosXAML.Views
             numberA = labelResult.Text;
             operation = "subs";
             labelOperations.Text += String.Format("{0:00}", numberA) + "-";
-            Listoperation.Add(numberA);
-            Listoperation.Add(operation);
+            list.Add(numberA);
+            list.Add(operation);
             labelResult.Text = "0";
         }
 
@@ -157,8 +157,8 @@ namespace FundamentosXAML.Views
             numberA = labelResult.Text;
             operation = "sum";
             labelOperations.Text += String.Format("{0:00}", numberA) + "+";
-            Listoperation.Add(numberA);
-            Listoperation.Add(operation);
+            list.Add(numberA);
+            list.Add(operation);
             labelResult.Text = "0";
         }
 
@@ -166,8 +166,8 @@ namespace FundamentosXAML.Views
         {
             numberB = labelResult.Text;
             labelOperations.Text += numberB;
-            Listoperation.Add(numberB);
-            labelResult.Text = calculate(Listoperation);
+            list.Add(numberB);
+            labelResult.Text = calculate(list);
         }
 
         private String calculate(List<String> Listoperation)

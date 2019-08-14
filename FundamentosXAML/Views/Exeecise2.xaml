@@ -44,9 +44,7 @@
                        FontSize="Large"
                         BackgroundColor="White"
                        />
-                <BoxView BackgroundColor=" # f0f0f0"
-                        >
-                </BoxView>
+               
 
 
 

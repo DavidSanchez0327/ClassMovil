@@ -11,7 +11,7 @@ namespace FundamentosXAML
         {
             InitializeComponent();
 
-            MainPage = new Exeecise2();
+            MainPage = new Calculator();
         }
 
         protected override void OnStart()
